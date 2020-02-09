@@ -1,0 +1,49 @@
+【题目】字符编码与解码
+【问题描述】利用哈夫曼编码进行通信可以大大提高信道利用率，
+缩短信息传输时间，降低传输成本。但是，这要求在发送端通过一个编码系统
+对待传数据预先编码，在接收端将传来的数据进行译码（复原）。对于双工信道
+（即可以双向传输信息的信道），每端都需要一个完整的编/译码系统。试为这样
+的信息收发站写一个哈夫曼码的编/译码系统。
+【基本要求】一个完整的系统应具有以下功能：
+
+（1）I: 初始化（Initialization）。从终端读入字符集大小n和由若干个字符
+组成的报文（可从文件TextFile1中读取），建立哈夫曼树，并保存（可存放在
+内存中，也可存于文件hfmTree中）；
+（2）E: 编码（Encoding）。利用已建好的哈夫曼树（如不在内存，则从文件hfmTree中读入）
+，对报文进行编码，将编码结果保存（可存放在内存中，也可存于文件CodeFile中；
+（3）D: 译码（Decoding）。利用已建好的哈夫曼树对编码结果进行译码，
+将译码结果保存（可存放在内存中，也可存于文件TextFile2中）；
+（4）P: 打印代码文件（Print）。将原字符串、编码结果和译码结果分别以紧凑格式显示在终端上，每行50个代码。
+（5）T: 打印哈夫曼树（Tree printing）。将已在内存中的哈夫曼树以直观的方式（树或凹入表形式）显示在终端上。
+（6）C：判断ASCII编码与Huffman编码对文件存储空间节省效果。
+【实现提示】
+（1）建立哈夫曼树时，必须对输入的报文进行频度统计，得到报文中出现的字符及其权值；
+（2）用户界面可以设计为菜单方式：
+*********************************************
+I ---- 初始化             E ---- 编码
+D ---- 译码              P ---- 打印代码文件
+T ---- 打印哈夫曼树      C ---- 比较结果
+Q ---- 结束
+***********************************************
+请选择功能符（输入I、E、D、P、T、C和Q）；
+当选择的功能执行完毕后再显示此菜单，直至某次用户选择了“Q”为止。
+
+A mouse once took a bite out of a bull's tail as he lay dozing. The bull jumped up in a rage and, with his head low to the ground, chased the mouse right across the yard. The mouse was too quick for him, however, and slipped easily into a hole in the wall.
+The bull charged the wall furiously again and again, but although he bruised his head and chipped his horns, the mouse stayed safely inside his hole. After a time the bull gave up and sank down to rest again.
+As soon as the bull was asleep, the little mouse crept to the mouth of the hole, pattered across the yard, bit the bull again -- this time on the nose -- and rushed back to safety. As the bull roared helplessly the mouse squeaked:
+"It's not always the big people who come off best. Sometimes the small ones win, you know."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
